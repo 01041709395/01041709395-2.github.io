@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맞춤 영양제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #2d572c;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .search-bar {
+            flex: 1;
+            margin: 0 20px;
+        }
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+        }
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .header-buttons button {
+            background-color: white;
+            color: #2d572c;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .container {
+            width: 75%;
+            margin: 20px auto;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            background-color: #ffffff;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .price {
+            font-size: 14px;
+            color: #ff5722;
+            font-weight: bold;
+        }
+        .discount-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        .rating {
+            color: #ff9800;
+            margin-top: 5px;
+        }
+        .review-count {
+            font-size: 12px;
+            color: #666;
+        }
+        .card_button {
+            background: #28a745;
+            color: white;
+            font-size: 14px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .card_button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>맞춤 영양제</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="search 전체 검색">
+        </div>
+        <div class="header-buttons">
+            <a href="login.html" style="text-decoration: none;"><button>로그인</button></a>
+            <a href="signup.html" style="text-decoration: none;"><button>회원가입</button></a>
+            <a href="orderlist.html" style="text-decoration: none;"><button>주문목록</button></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>내 몸을 위한 맞춤 영양제! 건강 습관 시작하기</h1>
+        <br>
+        <p><h3>"맞춤 진단을 통한 결과로 내 몸에 맞는 <u>최적의 선택</u>을 하세요."</h3></p>
+        <div class="card-container">
+            <div class="card">
+                <img src="./img/vitamin.jpg" alt="영양제 이미지">
+                <p class="card-title">라이프 익스텐션 Two-Per-Day 2개 세트</p>
+                <p>"필수 영양소를 한 번에! 하루 두 알로 건강을 꽉 채우세요."</p>
+                <p class="price">45,330원<span class="discount-price">63,600원</span></p>
+                <p class="rating">★★★★★</p>
+                <p class="review-count">리뷰 1개</p>
+                <button class="card_button" onclick="alert('Red Racket 주문 완료!')">Order Now</button>
+            </div>
+            <div class="card">
+                <img src="./img/lron.jpg" alt="영양제 이미지">
+                <p class="card-title">Thorne Iron Bisglycinate</p>
+                <p>"부드럽고 속 편한 철분 보충! 활기찬 하루의 시작을 함께하세요."</p>
+                <p class="price">34,000원<span class="discount-price">42,000원</span></p>
+                <p class="rating">★★★★☆</p>
+                <p class="review-count">리뷰 2개</p>
+                <button class="card_button" onclick="alert('Blue Racket 주문 완료!')">Order Now</button>
+            </div>
+            <div class="card">
+                <img src="./img/gang.jpg" alt="영양제 이미지">
+                <p class="card-title">Naturewise Turmeric Curcumin</p>
+                <p>"자연이 선물한 강황의 힘! 몸 속 염증 관리에 최적의 선택."</p>
+                <p class="price">27,900원<span class="discount-price">36,500원</span></p>
+                <p class="rating">★★★★☆</p>
+                <p class="review-count">리뷰 3개</p>
+                <button class="card_button" onclick="alert('Black Racket 주문 완료!')">Order Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
