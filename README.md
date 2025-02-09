@@ -1,2 +1,2 @@
 # 01041709395-2.github.io
-issue로 인한 second project 배포
+first project issue로 인한 second project 배포
